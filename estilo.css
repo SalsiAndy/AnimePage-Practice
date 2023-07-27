@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+header{
+    background-color: #FFFFFF;
+
+}
+
+.banner{
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+
+.menu {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Bordes superiores */
+  
+  .menu.servicios {
+    border-top: #665486 0.3em solid;
+  }
+  
+  .menu.recursos {
+    border-top: #CF6694 0.3em solid;
+  }
+  
+  .menu.proyectos {
+    border-top: #4C54AC 0.3em solid;
+  }
+  
+  .menu.contacto {
+    border-top: #BC2080 0.3em solid;
+  }
+  
+  /* Atributos y transición */
+  
+  .menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+  }
+  
+  .menu:after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+  }
+  
+  .menu:after {
+    content: attr(data-title);
+    width: 100%;
+    background: #3a3939;
+    color: #fff; 
+  }
+  
+  .menu > span > span {
+    width: 120px;
+    color: #fff;
+  }
+  
+  .menu.servicios > span > span {
+    background: #665486;
+      width: 300px;
+
+  }
+  
+  .menu.proyectos > span > span {
+    background: #4C54AC;
+    width: 300px;
+  }
+  
+  .menu.recursos > span > span {
+    background: #CF6694;
+    width: 300px;
+  }
+  
+  .menu.contacto > span > span {
+      background: #BC2080;
+      width: 300px;
+  }
+  
+  /* Lo que pasa con hover */
+  
+  .menu:hover > span {
+      height: 100%; 
+  }
+  
+  /* Dando formato a lista */ 
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
+  }
+
+ 
+  
+.Ai{
+    padding: 10px;
+    width: 150px;
+    margin: 0 -190px 20px 0;
+    float:left;
+    margin-left: 150px;
+    margin-top: 15px;
+    position:static;
+}
+
+
+.principal{
+    padding: 3em 0;
+    background:#f1d3eb;
+}
+
+
+.principal p{
+    margin: 0 0 1em;
+    width: 450px;
+    margin: 0 auto;   
+    color: #5b0937;
+    text-decoration:none;
+}
+
+
+.principal strong{
+    /*text-shadow para poner sombra en los textos*/
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+.pie{
+    
+    background: black;
+        
+    }
+
+
+svg{
+  width: 200px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+}
+
+.boton{
+    align:center;
+    padding: 13px 60px;
+    width: 120px;
+    /*Arriba, derecha, abajo, izquierda*/
+    margin: 0 0px 20px 460px;
+    
+
+}
+
+
+
+.btn{
+    position: relative;
+    display:inline-block;
+    color: rgb(115, 14, 115);
+    font-size: 14px;
+    font-family: "Josefin Sans";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #BC2080;
+    padding: 13px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.btn::before{
+  background: #BC2080;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+
+}
+
+.btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    
+
+
+    }
+  
+  
+  .btn3:hover::before{
+    background: rgb(202, 70, 138);
+
+    height: 410%;
+  }
+
+  a:hover {
+    font-size: 16px;
+    color: #ffffff;
+
+
+
+
+}
+  
+
